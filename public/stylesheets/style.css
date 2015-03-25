@@ -1,0 +1,37 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container-fluid {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.circle {
+	background-color: blue;
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	margin: 10%;
+}
+
+.on {
+	background-color: red;
+}
+
+.off {
+	background-color: blue;
+}
+
+.binary-only {
+	margin-bottom: 100px;
+}
+
+.unnecessary {
+	display: none;
+}
