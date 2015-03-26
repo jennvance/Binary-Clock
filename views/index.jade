@@ -1,9 +1,8 @@
 extends layout
 
 block content
-	#time
 	.container-fluid
-		.binary-only
+		.binary-clock
 			.row
 				.col-md-2
 				.col-md-1
@@ -88,6 +87,15 @@ block content
 					.circle#sec1
 				.col-md-1
 				.col-md-3
+			.row
+				.col-md-5
+				.col-md-2
+					#time
+				.col-md-5
+		.row
+			h6 This clock requires a minimum screen width of 992px for correct formatting
+			p This is a binary clock. Here's how it works:
+
 
 block script
 	script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')

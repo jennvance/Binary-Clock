@@ -19,6 +19,7 @@
 		var secsBinary = now.getSeconds().toString(2);
 
 		//ensure all binary numbers are 6 digits
+		//could also use :nth-last-child to remedy the issue instead
 		var makeSix = function(binaryString){
 			if(binaryString.length === 1){
 				return "00000" + binaryString;

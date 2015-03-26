@@ -1,6 +1,6 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  max-width: 100%
 }
 
 a {
@@ -8,12 +8,15 @@ a {
 }
 
 .container-fluid {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding: 0;
+}
+
+h3 {
+	color: white;
 }
 
 .circle {
-	background-color: blue;
+	background-color: #3deefd;
 	height: 50px;
 	width: 50px;
 	border-radius: 25px;
@@ -24,14 +27,31 @@ a {
 	background-color: red;
 }
 
-.off {
-	background-color: blue;
-}
-
-.binary-only {
-	margin-bottom: 100px;
-}
-
 .unnecessary {
 	display: none;
 }
+
+.binary-clock {
+	padding-top: 3%; 
+	padding-left: 6%;
+	padding-bottom: 2%;
+	background-color: #303131;
+	border: 25px #ff4d2e solid;
+}
+
+#time {
+	color: white;
+	margin-top: 50px;
+}
+
+.row p {
+	text-align: center;
+	font-size: 24px;
+	padding: 3%;
+}
+
+.row h6 {
+	text-align: center;
+}
+
+
