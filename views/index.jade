@@ -93,8 +93,34 @@ block content
 					#time
 				.col-md-5
 		.row
-			h6 This clock requires a minimum screen width of 992px for correct formatting
-			p This is a binary clock. Here's how it works:
+			h2.heading This is a <a href="http://en.wikipedia.org/wiki/Binary_number" class="link">binary</a> clock. Here's how it works:
+		//- .row
+			//- .col-lg-3
+			//- 	p Whitespace
+			//- .col-lg-2
+			//- 	p 1
+			//- .col-lg-2
+			//- 	p 2
+			//- .col-lg-2
+			//- 	p 3
+			//- .col-lg-3
+			//- 	p Whitespace
+		.row.centered
+			h4 There are 10 people in the world: those who understand binary, and those who do not.
+			p The three columns represent the hours, minutes, and seconds of the current time. This is why you see the rightmost column change every second and the middle column every minute.
+			p Each dot represents a place value in a binary number. This number has been turned on its side and can be read bottom to top.
+			p Each dot (place value) is associated with a base-2 value. Base-2 means that rather than counting 1,2,3,4,etc, you count 2^0,2^1,2^2,2^3,etc. Once you perform the exponent operation in those, you wind up with 1,2,4,8,16,32,etc.
+			p Those are the numbers you see on the left side. I put those there to help you read the clock.
+			p The value of the number is the sum of the lit-up dots. The lit-up dots mean that the value of the current time is "using" the value of the place value. For example, the number 3 "uses" both 1 and 2.
+			p In binary, if you're "using" the value of the place value, you designate it with a "1". If you're not, it stays "0".
+			p Going back to our example, 3 in binary would be 000011.
+			p We can use our key to determine the binary of a bigger number. Let's use 42. It's 101010. Wait, WHAT? Maybe it really is the meaning of everything.
+			h2 Questions to think about:
+			h4 Why do we use 6 digits in the minutes and seconds and 5 digits for the hours?
+			h4 The clock displays the hours on a 24 hour scale. How many digits would we need if we used a 12 hour scale?
+
+
+
 
 
 block script

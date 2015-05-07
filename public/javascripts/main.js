@@ -50,7 +50,7 @@
 
 		//decrementing for loop to grab each digit of the binary
 		//since native methods don't return leading zeroes
-		var x = function(){
+		var renderHours = function(){
 			// for(var i=hoursBinary.length-1; i >= 0; i--){
 			// } 
 				if(newHours[5] === "1"){
@@ -83,9 +83,10 @@
 				} else {
 					$('#hour32').removeClass('on');
 				}
-		};x();
+		};
+		renderHours();
 
-		var y = function(){
+		var renderMins = function(){
 			if(newMins[5]==="1"){
 				$('#min1').addClass('on');
 			} else {
@@ -117,9 +118,9 @@
 				$('#min32').removeClass('on');
 			}
 		};
-		y();
+		renderMins();
 		
-		var z = function(){
+		var renderSecs = function(){
 			if(newSecs[5]==="1"){
 				$('#sec1').addClass('on');
 			} else {
@@ -151,12 +152,16 @@
 				$('#sec32').removeClass('on');
 			}
 		};
-		z();
+		renderSecs();
 
-		setTimeout(function(){
-			startTime();
-		}, 1000);
+		// setTimeout(function(){
+		// 	startTime();
+		// }, 1000);
 	}
+	setInterval(function(){
+		startTime();
+	}, 1000);
+	//Start immediately on page load rather than waiting 1s
 	startTime();
 })();
 
